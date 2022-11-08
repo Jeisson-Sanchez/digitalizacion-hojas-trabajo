@@ -15,7 +15,7 @@ class CreateCortesTable extends Migration
     {
         Schema::create('cortes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('cortes')->nullable();
+            $table->string('corte')->nullable();
             $table->string('descripcion');
             $table->integer('estado')->default(1);
             $table->timestamps();

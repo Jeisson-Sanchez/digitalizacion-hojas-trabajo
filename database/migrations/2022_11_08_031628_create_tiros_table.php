@@ -15,7 +15,7 @@ class CreateTirosTable extends Migration
     {
         Schema::create('tiros', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('tiros')->nullable();
+            $table->string('tiro')->nullable();
             $table->string('descripcion');
             $table->integer('estado')->default(1);
             $table->timestamps();
