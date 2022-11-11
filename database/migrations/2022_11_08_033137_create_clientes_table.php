@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateColoresTable extends Migration
+class CreateClientesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreateColoresTable extends Migration
      */
     public function up()
     {
-        Schema::create('colores', function (Blueprint $table) {
+        Schema::create('clientes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('color')->nullable();
-            $table->string('descripcion');
+            $table->integer('nit_cliente')->nullable();
+            $table->integer('nom_cliente')->nullable();
+            $table->integer('repre_legal');
             $table->integer('estado')->default(1);
             $table->timestamps();
         });
@@ -29,6 +30,6 @@ class CreateColoresTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('colores');
+        Schema::dropIfExists('clientes');
     }
 }

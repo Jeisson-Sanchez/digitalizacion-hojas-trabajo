@@ -17,7 +17,7 @@ class CreateTipoImpresionesTable extends Migration
             $table->increments('id');
             $table->string('tipo')->nullable();
             $table->string('descripcion');
-            $table->integer('state')->default(1);
+            $table->integer('estado')->default(1);
             $table->timestamps();
         });
     }
