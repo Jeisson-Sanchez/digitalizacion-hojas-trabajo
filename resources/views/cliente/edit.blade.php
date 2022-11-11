@@ -4,7 +4,7 @@
 
 <h2>EDITAR CLIENTES</h2>
 
-<form action="/clientes/{{$cliente->id}}" method="POST">
+<form action="/clientes/{{$cliente->id_cliente}}" method="POST">
     @csrf
     @method('PUT')
     <div class="mb-3">
@@ -23,7 +23,7 @@
         <label for="" class="form-label">Fecha de Creacion</label>
         <input id="fecha_creada" name="fecha_creada" type="date" class="form-control" value="{{$cliente->fecha_creada}}">
     </div>
-    <a href="/clientes" class="btn btn-secondary" tabindex="5">Cancelar</a>
+    <a href="/cliente" class="btn btn-secondary" tabindex="5">Cancelar</a>
     <button type="submit" class="btn btn-primary" tabindex="4">Guardar</button>
 </form>
 

@@ -4,7 +4,7 @@
 
 <h2>EDITAR PAPEL</h2>
 
-<form action="/papeles/{{$papel->id_papel}}" method="POST">
+<form action="/papeles/{{$papeles->id_papel}}" method="POST">
     @csrf
     @method('PUT')
     <div class="mb-3">

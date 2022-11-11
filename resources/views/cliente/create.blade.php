@@ -4,7 +4,7 @@
 
 <h2>CREAR CLIENTES</h2>
 
-<form action="/clientes" method="POST">
+<form action="/cliente" method="POST">
     @csrf
     <div class="mb-3">
         <label for="" class="form-label">NIT</label>
@@ -22,7 +22,7 @@
         <label for="" class="form-label">Fecha Creacion</label>
         <input id="fecha_creada" name="fecha_creada" type="date" class="form-control">
     </div>
-    <a href="/clientes" class="btn btn-secondary" tabindex="5">Cancelar</a>
+    <a href="/cliente" class="btn btn-secondary" tabindex="5">Cancelar</a>
     <button type="submit" class="btn btn-primary" tabindex="4">Guardar</button>
 </form>
 

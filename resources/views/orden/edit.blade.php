@@ -4,7 +4,7 @@
 
 <h2>EDITAR ORDENES</h2>
 
-<form action="/ordenes/{{$orden->id_orden}}" method="POST">
+<form action="/orden/{{$orden->id_orden}}" method="POST">
     @csrf
     @method('PUT')
     <div class="mb-3">
@@ -28,18 +28,18 @@
         <input id="observaciones" name="observaciones" type="text" class="form-control" tabindex="5" value="{{$orden->observaciones}}">
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">Cliente ID</label>
+        <label for="" class="form-label">Cliente</label>
         <input id="cliente_id" name="cliente_id" type="number" class="form-control" tabindex="6" value="{{$orden->cliente_id}}">
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">Producto ID</label>
+        <label for="" class="form-label">Producto</label>
         <input id="producto_id" name="producto_id" type="number" class="form-control" tabindex="7" value="{{$orden->producto_id}}">
     </div>
     <div class="mb-3">
         <label for="" class="form-label">ID Orden Anterior</label>
         <input id="id_orden_anterior" name="id_orden_anterior" type="number" class="form-control" tabindex="7" value="{{$orden->id_orden_anterior}}">
     </div>
-    <a href="/ordenes" class="btn btn-secondary" tabindex="5">Cancelar</a>
+    <a href="/orden" class="btn btn-secondary" tabindex="5">Cancelar</a>
     <button type="submit" class="btn btn-primary" tabindex="4">Guardar</button>
 </form>
 

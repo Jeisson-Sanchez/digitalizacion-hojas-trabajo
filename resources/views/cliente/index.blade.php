@@ -1,7 +1,7 @@
 @extends('layouts.plantillabase')
 
 @section('contenido')
-<a href="clientes/create" class="btn btn-primary">CREAR CLIENTE</a>
+<a href="cliente/create" class="btn btn-primary">CREAR CLIENTE</a>
 
 <table class="table table-dark table-striped mt-4">
     <thead>
@@ -21,7 +21,7 @@
             <td>{{ $cliente->repre_legal}}</td>
             <td>{{ $cliente->fecha_creada}}</td>
             <td>
-                <a href="/clientes/{{ $cliente->id_cliente}}/edit" class="btn btn-info">Editar</a>
+                <a href="/cliente/{{ $cliente->id_cliente}}/edit" class="btn btn-info">Editar</a>
                 <button class="btn btn-danger">Borrar</button>
             </td>
         </tr>

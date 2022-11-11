@@ -12,10 +12,7 @@ class Producto extends Model
     protected $table = 'productos';
     protected $fillable = [
         'papel_id',
-        'corte_id',
-        'tiro_id',
         'tipo_id',
-        'color_id',
         'retiro',
         'tamano',
         'numeracion_ini',
