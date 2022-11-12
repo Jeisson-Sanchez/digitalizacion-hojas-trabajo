@@ -4,7 +4,7 @@
 
 <h2>CREAR ORDEN</h2>
 
-<form action="/orden" method="POST">
+<form action="/ordenes" method="POST">
     @csrf
     <div class="mb-3">
         <label for="" class="form-label">Fecha Creacion</label>
@@ -38,7 +38,7 @@
         <label for="" class="form-label">ID Orden Anterior</label>
         <input id="id_orden_anterior" name="id_orden_anterior" type="number" class="form-control" tabindex="7">
     </div>
-    <a href="/orden" class="btn btn-secondary" tabindex="5">Cancelar</a>
+    <a href="/ordenes" class="btn btn-secondary" tabindex="5">Cancelar</a>
     <button type="submit" class="btn btn-primary" tabindex="4">Guardar</button>
 </form>
 

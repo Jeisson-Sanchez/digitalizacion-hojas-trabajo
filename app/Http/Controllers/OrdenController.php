@@ -36,11 +36,12 @@ class OrdenController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request);
         $ordenes = new Orden();
         $ordenes->cliente_id = $request->get('cliente_id');
         $ordenes->producto_id = $request->get('producto_id');
-        $ordenes->id_orden_anterior = $request->get('id_orden_anterior');
-        $ordenes->fecha_creacion = $request->get('fecha_creacion');
+        $ordenes->orden_anterior_id = $request->get('id_orden_anterior');
+        // $ordenes->fecha_creacion = $request->get('fecha_creacion');
         $ordenes->nombre = $request->get('nombre');
         $ordenes->cantidad = $request->get('cantidad');
         $ordenes->fecha_vencimiento = $request->get('fecha_vencimiento');
@@ -83,7 +84,7 @@ class OrdenController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        dd($request, $id);
     }
 
     /**

@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Route::post('editOrden', 'OrdenController@update');
 Route::resource('papeles', 'App\Http\Controllers\PapelController');
 Route::resource('tipos_impresion', 'App\Http\Controllers\TipoImpresionController');
 Route::resource('clientes', 'App\Http\Controllers\ClienteController');

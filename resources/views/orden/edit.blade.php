@@ -4,7 +4,7 @@
 
 <h2>EDITAR ORDENES</h2>
 
-<form action="/orden/{{$orden->id_orden}}" method="POST">
+<form action="/ordenes" method="POST">
     @csrf
     @method('PUT')
     <div class="mb-3">
@@ -38,6 +38,7 @@
     <div class="mb-3">
         <label for="" class="form-label">ID Orden Anterior</label>
         <input id="id_orden_anterior" name="id_orden_anterior" type="number" class="form-control" tabindex="7" value="{{$orden->id_orden_anterior}}">
+        <input id="id" name="id" type="hidden" value="{{$orden->id_orden}}">
     </div>
     <a href="/orden" class="btn btn-secondary" tabindex="5">Cancelar</a>
     <button type="submit" class="btn btn-primary" tabindex="4">Guardar</button>
